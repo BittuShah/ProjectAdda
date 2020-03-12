@@ -3,7 +3,7 @@ import logoImage from "../Images/logo.png";
 
 const header = () => {
   return (
-    <header style={headerStyle}>
+    <header style={headerStyle} className="sticky-top">
       <div
         className="logo"
         style={{ width: "10%", height: "100%", marginLeft: "90px" }}
@@ -42,11 +42,6 @@ const header = () => {
             <li style={liStyle}>
               <a className="nav-a bracket">Sign up</a>
             </li>
-            {false && (
-              <li style={liStyle}>
-                <a className="nav-a bracket">Other</a>
-              </li>
-            )}
           </div>
         </ul>
       </nav>
@@ -57,12 +52,14 @@ const header = () => {
 const headerStyle = {
   width: "100%",
   height: "80px",
-  position: "fixed",
   display: "inline-flex",
-  border: "1px solid black"
+  // border: "1px solid black",
+  backgroundColor: "#fff"
+  // zIndex: "1"
 };
 
 const logoStyle = {
+  marginTop: "1%",
   height: "100%",
   width: "100%"
   //   marginLeft: "90px"
@@ -71,7 +68,11 @@ const logoStyle = {
 const liStyle = {
   float: "left",
   padding: "0px 45px 0px 0px",
-  listStyle: "none"
+  listStyle: "none",
+  fontSize: "1.2rem",
+  fontWeight: "400",
+  fontFamily: "cursive",
+  textTransform: "capitalize"
 };
 
 export default header;
