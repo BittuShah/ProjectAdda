@@ -15,9 +15,12 @@ class Testimonials extends Component {
   };
   render() {
     return (
-      <div className="jumbotron" style={testimonial}>
-        {/* <h1>Hello World!</h1> */}
-        <div className="row">
+      <div className="jumbotron pt-2" style={testimonial}>
+        <h1 className="text-center" style={{ color: "#2b123a" }}>
+          Testimonials
+        </h1>
+        <hr style={line} />
+        <div className="row mt-5">
           {this.state.feedbacks.map(feedback => (
             <div
               key={feedback.Temp_Id}
@@ -28,24 +31,14 @@ class Testimonials extends Component {
             >
               {/* <div style={block}> */}
               <h3>
-                {feedback.UserInfo.UserName},
-                <span> {feedback.UserInfo.City}, </span>
-                <span>{feedback.UserInfo.State}</span>
+                {feedback.UserInfo.UserName} (
+                <span style={location}> {feedback.UserInfo.City}, </span>
+                <span style={location}>{feedback.UserInfo.State} </span>)
               </h3>
               <h5>{feedback.FeedbackMsg}</h5>
-              {this.state.feedbacks.map(f => {
-                let counter = 1;
-                while (counter <= 5) {
-                  if (counter < f.Ratings) {
-                    <Ratings star="" />;
-                  } else {
-                    <Ratings star="-o" />;
-                  }
-                  counter++;
-                }
-              })}
-              {/* <Ratings totalRatings={feedback.Ratings} /> */}
-              <h2 className="justify-content-center">{feedback.Ratings}</h2>
+
+              <Ratings totalRatings={feedback.Ratings} />
+              {/* <h2 className="justify-content-center">{feedback.Ratings}</h2> */}
               {/* </div> */}
             </div>
           ))}
@@ -56,7 +49,8 @@ class Testimonials extends Component {
 }
 
 const testimonial = {
-  backgroundColor: "#fbffff"
+  backgroundColor: "#fbffff",
+  fontFamily: "cursive"
 };
 
 const outer = {
@@ -64,6 +58,17 @@ const outer = {
   borderRadius: "17px",
   backgroundColor: "#fbd4cf",
   color: "#2b123a"
+};
+
+const location = {
+  fontSize: "15px"
+};
+
+const line = {
+  height: "5px",
+  width: "170px",
+  backgroundImage: "linear-gradient(to right, #fbd4cf, #2b123a)",
+  borderRadius: "17px"
 };
 
 // const block = {

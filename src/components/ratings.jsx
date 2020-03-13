@@ -1,12 +1,39 @@
 import React from "react";
 // import "font-awesome/css/font-awesome.css";
 
-const Ratings = ({ star }) => {
-  let classes = "";
-  if (!star) classes = "fa fa-star";
-  else classes = "fa fa-star" + star;
+const Ratings = ({ totalRatings }) => {
+  let elements = [];
+  let counter = 1;
 
-  return <i className={classes}></i>;
+  while (counter <= 5) {
+    if (counter <= totalRatings) {
+      elements.push(
+        <i key={counter} className="fa fa-star" style={filled}></i>
+      );
+    } else {
+      elements.push(
+        <i key={counter} className="fa fa-star-o" style={empty}></i>
+      );
+    }
+    counter++;
+  }
+
+  return <div>{elements.map(e => e)}</div>;
+
+  // console.log(elements);
+  // return <i className="fa fa-star-o"></i>;
+  // return null;
+};
+
+const empty = {
+  marginRight: "3px",
+  fontSize: "20px"
+};
+
+const filled = {
+  marginRight: "3px",
+  color: "#420F8D",
+  fontSize: "20px"
 };
 
 export default Ratings;
