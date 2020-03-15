@@ -1,5 +1,6 @@
 import React from "react";
 // import "font-awesome/css/font-awesome.css";
+import styles from "./../../cssModules/testimonials.module.css";
 
 const Ratings = ({ totalRatings }) => {
   let elements = [];
@@ -8,11 +9,11 @@ const Ratings = ({ totalRatings }) => {
   while (counter <= 5) {
     if (counter <= totalRatings) {
       elements.push(
-        <i key={counter} className="fa fa-star" style={filled}></i>
+        <i key={counter} className={`fa fa-star ${styles.filled}`}></i>
       );
     } else {
       elements.push(
-        <i key={counter} className="fa fa-star-o" style={empty}></i>
+        <i key={counter} className={`fa fa-star-o ${styles.empty}`}></i>
       );
     }
     counter++;
@@ -23,17 +24,6 @@ const Ratings = ({ totalRatings }) => {
   // console.log(elements);
   // return <i className="fa fa-star-o"></i>;
   // return null;
-};
-
-const empty = {
-  marginRight: "3px",
-  fontSize: "20px"
-};
-
-const filled = {
-  marginRight: "3px",
-  color: "#420F8D",
-  fontSize: "20px"
 };
 
 export default Ratings;

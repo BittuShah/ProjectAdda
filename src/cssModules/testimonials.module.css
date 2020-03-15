@@ -1,0 +1,44 @@
+.testimonial {
+  background-color: #fbffff;
+  font-family: cursive;
+}
+
+.outer {
+  /* border: "1px solid black", */
+  border-radius: 17px;
+  background-color: #fbd4cf;
+  color: #2b123a;
+}
+
+.location {
+  font-size: 15px;
+}
+
+.line {
+  height: 5px;
+  width: 170px;
+  background-image: linear-gradient(to right, #f4bbb5, #817289);
+  border-radius: 17px;
+}
+
+/* .block {
+  border: 1px solid black;
+  width: 300px;
+  margin-left: 100px;
+  text-align: center;
+} */
+
+/* Testimonials main file's style ends*/
+
+/* Ratings style starts */
+
+.empty {
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+.filled {
+  margin-right: 3px;
+  color: #420f8d;
+  font-size: 20px;
+}
