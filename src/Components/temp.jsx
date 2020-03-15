@@ -6,7 +6,7 @@ const Temp = () => {
 
 const temp = {
   height: "700px",
-  backgroundColor: "black"
+  backgroundColor: "#fbffff"
 };
 
 export default Temp;

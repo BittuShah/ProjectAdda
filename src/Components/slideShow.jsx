@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Img1 from "../Images/img1.jpg";
 import Img2 from "../Images/img2.jpg";
 import Img3 from "../Images/img3.jpg";
+import slideStyle from "../cssModules/slideShow.module.css";
 
 const slideShow = () => {
   return (
@@ -9,30 +10,26 @@ const slideShow = () => {
       id="carouselExampleInterval"
       className="carousel slide"
       data-ride="carousel"
-      style={{ zIndex: "", marginTop: "20px" }}
     >
       <div className="carousel-inner">
-        <div className="carousel-item active" data-interval="10000">
+        <div className="carousel-item active" data-interval="4000">
           <img
             src={Img1}
-            className="d-block w-100"
-            style={slideStyle}
+            className={`d-block w-100 ${slideStyle.imgStyle}`}
             alt="..."
           />
         </div>
-        <div className="carousel-item" data-interval="2000">
+        <div className="carousel-item" data-interval="4000">
           <img
             src={Img2}
-            className="d-block w-100"
-            style={slideStyle}
+            className={`d-block w-100 ${slideStyle.imgStyle}`}
             alt="..."
           />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item" data-interval="4000">
           <img
             src={Img3}
-            className="d-block w-100"
-            style={slideStyle}
+            className={`d-block w-100 ${slideStyle.imgStyle}`}
             alt="..."
           />
         </div>
@@ -59,7 +56,4 @@ const slideShow = () => {
   );
 };
 
-const slideStyle = {
-  height: "550px"
-};
 export default slideShow;

@@ -1,0 +1,14 @@
+.logoDiv {
+  width: 50%;
+  height: 100%;
+  margin-top: 2%;
+  margin-left: 90px;
+  /* border: 1px solid black; */
+}
+
+.logoImg {
+  /* margin-top: 1%; */
+  height: 100%;
+  width: 100%;
+  /* margin-left: 90px */
+}

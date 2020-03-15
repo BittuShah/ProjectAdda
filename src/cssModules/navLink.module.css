@@ -1,0 +1,25 @@
+.navigation {
+  width: 80%;
+  height: 100%;
+}
+
+.ulClass {
+  margin-top: 2%;
+  margin-left: 7%;
+  /* border: 1px solid black; */
+}
+
+.liClass {
+  float: left;
+  padding: 0px 45px 0px 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: cursive;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.rightDiv {
+  float: right;
+}
