@@ -2,6 +2,7 @@ import React from "react";
 import Img1 from "../Images/img1.jpg";
 import Img2 from "../Images/img2.jpg";
 import Img3 from "../Images/img3.jpg";
+import vid from "../Videos/ghoomar.mp4";
 import slideStyle from "../cssModules/slideShow.module.css";
 
 const slideShow = () => {
@@ -13,11 +14,18 @@ const slideShow = () => {
     >
       <div className="carousel-inner">
         <div className="carousel-item active" data-interval="4000">
-          <img
+          {/* <img
             src={Img1}
             className={`d-block w-100 ${slideStyle.imgStyle}`}
             alt="..."
-          />
+          /> */}
+          <video
+            style={{ width: "100%" }}
+            className={slideStyle.vidStyle}
+            autoPlay
+          >
+            <source src={vid} type="video/mp4" />
+          </video>
         </div>
         <div className="carousel-item" data-interval="4000">
           <img

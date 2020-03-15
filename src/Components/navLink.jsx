@@ -6,26 +6,26 @@ const navLink = () => {
     <nav className={navStyle.navigation}>
       <ul className={navStyle.ulClass}>
         <li className={navStyle.liClass}>
-          <a className="nav-a nav-selected">Home</a>
+          <a className={navStyle.nav_a}>Home</a>
         </li>
         <li className={navStyle.liClass}>
-          <a className="nav-a bracket">Projects</a>
+          <a className={navStyle.nav_a}>Projects</a>
         </li>
         <li className={navStyle.liClass}>
-          <a className="nav-a bracket">Category</a>
+          <a className={navStyle.nav_a}>Category</a>
         </li>
         <li className={navStyle.liClass}>
-          <a className="nav-a bracket">About</a>
+          <a className={navStyle.nav_a}>About</a>
         </li>
         <li className={navStyle.liClass}>
-          <a className="nav-a bracket">Other</a>
+          <a className={navStyle.nav_a}>Other</a>
         </li>
         <div className={navStyle.rightDiv}>
           <li className={navStyle.liClass}>
-            <a className="nav-a bracket">Login</a>
+            <a className={navStyle.nav_a}>Login</a>
           </li>
           <li className={navStyle.liClass}>
-            <a className="nav-a bracket">Sign up</a>
+            <a className={navStyle.nav_a}>Sign up</a>
           </li>
         </div>
       </ul>
