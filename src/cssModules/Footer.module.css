@@ -1,7 +1,7 @@
 .container {
   padding-top: 15px;
-  background-image: linear-gradient(to left, #fbd4cf, #817289);
-  border-radius: 5%;
+  /* background-image: linear-gradient(to left, #fbd4cf, #817289); */
+  background-color: #fbcac3;
 }
 
 .list_inline_item {
