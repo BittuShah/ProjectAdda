@@ -5,7 +5,7 @@ class Social extends Component {
   render() {
     return (
       <div className={`col-4 text-center ${styles.social}`}>
-        <h6 className="">Follow Us!</h6>
+        <h4 className="">Follow Us!</h4>
         <ul className="list-unstyled list-inline">
           <li className={`list-inline-item ${styles.list_inline_item}`}>
             <span className={`btn-floating mx-2 ${styles.fb}`}>
