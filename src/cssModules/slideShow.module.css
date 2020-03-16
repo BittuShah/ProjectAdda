@@ -1,3 +1,19 @@
 .imgStyle {
-  height: 550px;
+  height: 500px;
+}
+
+.contentDiv {
+  display: inline-flex;
+  width: 100%;
+  height: 500px;
+}
+
+.vidStyle {
+  width: 40%;
+}
+
+.detailsDiv {
+  background-color: #6b2c91;
+  color: #f69487;
+  width: 60%;
 }
