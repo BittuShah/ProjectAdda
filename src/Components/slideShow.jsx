@@ -7,16 +7,21 @@ import slideStyle from "../cssModules/slideShow.module.css";
 
 class slideShow extends Component {
   state = {
-    images: [Img1, Img2, Img3],
+    images: [
+      { imgPath: Img1, onScreen: true },
+      { imgPath: Img2, onScreen: false },
+      { imgPath: Img3, onScreen: false }
+    ],
+    intervalTime: 10000,
     hover: false
   };
 
-  myFun = () => {
+  slideHoverHandle = () => {
     alert("hello");
   };
 
   render() {
-    const images = this.state.images;
+    const { images, intervalTime, slideHoverHandle } = this.state;
 
     return (
       <div
@@ -25,22 +30,27 @@ class slideShow extends Component {
         data-ride="carousel"
       >
         <div className="carousel-inner">
-          {/* {images.map(image => {
-            <div className="carousel-item" data-interval="15000">
+          {images.map(image => (
+            <div
+              className={
+                image.onScreen === true
+                  ? "carousel-item active"
+                  : "carousel-item"
+              }
+              data-interval={intervalTime}
+              key={image.imgPath}
+              // onMouseMove={() => console.log(window.scrollX, window.scrollY)}
+              // onMouseEnter={() => this.slideHoverHandle()}
+            >
               <img
-                src={Img2}
+                src={image.imgPath}
                 className={`d-block w-100 ${slideStyle.imgStyle}`}
                 alt="..."
               />
-            </div>;
-          })} */}
+            </div>
+          ))}
 
-          {/* <div className="carousel-item active" data-interval="15000">
-            <img
-            src={Img1}
-            className={`d-block w-100 ${slideStyle.imgStyle}`}
-            alt="..."
-          />
+          {/* 
             <div className={`${slideStyle.contentDiv}`}>
               <video
                 className={`${slideStyle.vidStyle}`}
@@ -53,21 +63,7 @@ class slideShow extends Component {
 
               <div className={`${slideStyle.detailsDiv}`}>Hello</div>
             </div>
-          </div>
-          <div className="carousel-item" data-interval="15000">
-            <img
-              src={Img2}
-              className={`d-block w-100 ${slideStyle.imgStyle}`}
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item" data-interval="15000">
-            <img
-              src={Img3}
-              className={`d-block w-100 ${slideStyle.imgStyle}`}
-              alt="..."
-            />
-          </div> */}
+          */}
         </div>
         <a
           className="carousel-control-prev"

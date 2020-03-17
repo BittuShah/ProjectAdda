@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Components/header";
-import SlideShow from "./Components/slideShow";
-import Temp from "./Components/temp";
+import Header from "./components/header";
+import SlideShow from "./components/slideShow";
+import Temp from "./components/temp";
 import "./App.css";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <SlideShow />
-      {/* <Temp /> */}
+      <Temp />
     </div>
   );
 }

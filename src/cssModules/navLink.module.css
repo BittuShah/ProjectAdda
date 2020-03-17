@@ -1,12 +1,12 @@
 .navigation {
   width: 80%;
   height: 100%;
+  /* border: 1px solid black; */
 }
 
 .ulClass {
   margin-top: 2%;
-  margin-left: 7%;
-  /* border: 1px solid black; */
+  /* margin-left: 7%; */
 }
 
 .ulClass * {
@@ -28,6 +28,7 @@
 
 .rightDiv {
   float: right;
+  margin-right: 30px;
 }
 
 .nav_a {
