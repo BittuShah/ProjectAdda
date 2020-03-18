@@ -12,7 +12,7 @@ class slideShow extends Component {
       { imgPath: Img2, onScreen: false },
       { imgPath: Img3, onScreen: false }
     ],
-    intervalTime: 10000,
+    intervalTime: 2000,
     hover: false
   };
 
@@ -26,7 +26,7 @@ class slideShow extends Component {
     return (
       <div
         id="carouselExampleInterval"
-        className="carousel slide"
+        className={`carousel slide ${slideStyle.slideDiv}`}
         data-ride="carousel"
       >
         <div className="carousel-inner">
@@ -66,7 +66,7 @@ class slideShow extends Component {
           */}
         </div>
         <a
-          className="carousel-control-prev"
+          className={`carousel-control-prev ${slideStyle.slideLeft}`}
           href="#carouselExampleInterval"
           role="button"
           data-slide="prev"
@@ -74,11 +74,12 @@ class slideShow extends Component {
           <span
             className="carousel-control-prev-icon"
             aria-hidden="true"
+            style={{ color: "blue" }}
           ></span>
           <span className="sr-only">Previous</span>
         </a>
         <a
-          className="carousel-control-next"
+          className={`carousel-control-next ${slideStyle.slideRight}`}
           href="#carouselExampleInterval"
           role="button"
           data-slide="next"

@@ -1,5 +1,26 @@
+.slideDiv {
+  top: 0;
+  /* margin-top: -60px; */
+  left: 0;
+}
+
+.slideLeft,
+.slideRight {
+  height: 30px;
+  width: 30px;
+  top: 350px;
+}
+
+.slideLeft {
+  left: 80px;
+}
+
+.slideRight {
+  right: 80px;
+}
+
 .imgStyle {
-  height: 500px;
+  height: 690px;
 }
 
 .contentDiv {

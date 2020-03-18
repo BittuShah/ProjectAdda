@@ -6,6 +6,7 @@ import headerStyle from "../cssModules/header.module.css";
 const header = () => {
   return (
     <header className={`sticky-top ${headerStyle.header}`}>
+      <div className={headerStyle.headerBackground}></div>
       <Logo />
       <NavLink />
     </header>
