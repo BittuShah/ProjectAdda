@@ -1,12 +1,12 @@
 .header {
   width: 100%;
-  height: 110px;
+  height: 8em;
   display: inline-flex;
   /* border: 1px solid black; */
   /* background-color: #fbffff; */
   background-color: transparent;
   z-index: 1;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   position: absolute;
 }
 
@@ -15,8 +15,20 @@
 
   /* background-color: #f69487; */
   background-color: rgba(254, 244, 243, 0.6);
+  /* background-color: rgba(254, 244, 243, 0.2); */
+
   /* background-color: #f69487; */
-  height: 125px;
+  height: inherit;
   width: 100%;
   z-index: -1;
+  /* box-shadow: 2px 2px 5px 2px rgba(254, 244, 243, 0.6); */
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 1); */
+}
+
+/* Mobile */
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+  .header {
+    height: 6.25em;
+  }
 }

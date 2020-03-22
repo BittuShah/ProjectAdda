@@ -1,13 +1,11 @@
 import React from "react";
 import logoStyle from "../cssModules/logo.module.css";
-import logoImage from "../Images/1.png";
+import logoImage from "../Images/logo.png";
 
 const Logo = () => {
   return (
-    <div>
-      <div className={logoStyle.logoDiv}>
-        <img src={logoImage} className={logoStyle.logoImg} alt="" />
-      </div>
+    <div className={logoStyle.logoDiv}>
+      <img src={logoImage} className={logoStyle.logoImg} alt="" />
     </div>
   );
 };

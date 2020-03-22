@@ -1,14 +1,37 @@
 .logoDiv {
-  width: 30%;
-  height: 100%;
-  margin-top: 2%;
-  margin-left: 90px;
+  width: 8%;
+  height: 110px;
+  margin: 1% 8% 0 8%;
   /* border: 1px solid black; */
 }
 
 .logoImg {
-  /* margin-top: 1%; */
   height: 100%;
   width: 100%;
-  /* margin-left: 90px */
+}
+
+/* Resonsive  */
+
+@media screen and (max-width: 1300px) and (min-width: 1120px) {
+  .logoDiv {
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .logoDiv {
+    margin-left: 12%;
+    width: 10%;
+  }
+}
+
+/* Mobile */
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+  .logoDiv {
+    width: 17%;
+    height: 80px;
+    margin: 4% 8% 0 10%;
+    display: none;
+  }
 }
