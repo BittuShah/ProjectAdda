@@ -8,21 +8,21 @@ class Testimonials extends Component {
   state = {
     feedbacks: getFeedback(),
     classes: [
-      "col-lg-4",
-      "col-lg-4 offset-lg-4",
-      "col-lg-6 offset-lg-3",
-      "col-lg-4",
-      "col-lg-4 offset-lg-4"
+      "col-lg-4 col-11",
+      "col-lg-4 offset-lg-4 col-11",
+      "col-lg-6 offset-lg-3 col-11",
+      "col-lg-4 col-11",
+      "col-lg-4 offset-lg-4 col-11"
     ]
   };
   render() {
     return (
-      <div className={`jumbotron pt-2 ${styles.testimonials}`}>
+      <div className={`jumbotron pt-2 ${styles.testimonial}`}>
         <h1 className="text-center" style={{ color: "#2b123a" }}>
           Testimonials
         </h1>
         <hr className={styles.line} />
-        <div className="row mt-5">
+        <div className={`row mt-5 ${styles.boxes}`}>
           {this.state.feedbacks.map(feedback => (
             <div
               key={feedback.Temp_Id}
@@ -31,7 +31,7 @@ class Testimonials extends Component {
               } ${this.state.classes[feedback.Temp_Id - 1]}`}
             >
               {/* <div style={block}> */}
-              <h3>
+              <h3 className={`${styles.name}`}>
                 {feedback.UserInfo.UserName} (
                 <span className={styles.location}>
                   {" "}

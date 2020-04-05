@@ -1,6 +1,8 @@
 .testimonial {
   background-color: #fbffff;
   font-family: cursive;
+  /* margin: 0px; */
+  /* padding: 5px; */
 }
 
 .outer {
@@ -41,4 +43,16 @@
   margin-right: 3px;
   color: #420f8d;
   font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .name {
+    font-size: 15px;
+  }
+
+  .boxes {
+    margin-left: 15px !important;
+  }
 }

@@ -4,7 +4,7 @@ import Testimonials from "./components/testimonials";
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className={`container-fluid pl-0 pr-0`}>
       <Testimonials />
 
       {/* <header className="App-header">
