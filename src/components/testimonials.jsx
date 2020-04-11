@@ -8,12 +8,12 @@ class Testimonials extends Component {
   state = {
     feedbacks: getFeedback(),
     classes: [
-      "col-lg-4 col-11",
-      "col-lg-4 offset-lg-4 col-11",
-      "col-lg-6 offset-lg-3 col-11",
-      "col-lg-4 col-11",
-      "col-lg-4 offset-lg-4 col-11"
-    ]
+      "col-lg-4",
+      "col-lg-4 offset-lg-4",
+      "col-lg-6 offset-lg-3",
+      "col-lg-4",
+      "col-lg-4 offset-lg-4",
+    ],
   };
   render() {
     return (
@@ -23,7 +23,7 @@ class Testimonials extends Component {
         </h1>
         <hr className={styles.line} />
         <div className={`row mt-5 ${styles.boxes}`}>
-          {this.state.feedbacks.map(feedback => (
+          {this.state.feedbacks.map((feedback) => (
             <div
               key={feedback.Temp_Id}
               className={`justify-content-center bg-gradients-primary text-center mb-3 p-2 ${

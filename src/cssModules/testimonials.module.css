@@ -53,6 +53,7 @@
   }
 
   .boxes {
-    margin-left: 15px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
