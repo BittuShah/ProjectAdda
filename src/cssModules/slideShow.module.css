@@ -8,19 +8,23 @@
 .slideRight {
   height: 30px;
   width: 30px;
-  top: 350px;
+  top: 45%;
+  /* color: red !important; */
+  /* background-color: red; */
 }
 
 .slideLeft {
-  left: 80px;
+  left: 5%;
+  /* color: red; */
 }
 
 .slideRight {
-  right: 80px;
+  right: 5%;
+  /* color: red !important; */
 }
 
 .imgStyle {
-  height: 690px;
+  height: 300px;
 }
 
 .contentDiv {

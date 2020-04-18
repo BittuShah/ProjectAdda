@@ -1,0 +1,95 @@
+.sliderBgDiv {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.4s;
+}
+.sliderMainDiv {
+  height: 100%;
+  width: 60%;
+  top: 0;
+  right: -500px;
+  /* background-color: #842c91; */
+  /* background-color: #b543c6; */
+  /* background-color: #c46ad2; */
+
+  /* anuj parshv */
+  background-color: cadetblue;
+
+  /* background-color: #ec6955; */
+  /* background-color: #ec8f55; */
+
+  /* anuj panchu */
+  /* background-color: #ec8255; */
+
+  /* background-color: #ecb555; */
+  /* background-color: rgba(236, 130, 85, 0.7); */
+  z-index: 100;
+  position: fixed;
+  box-shadow: -3px 2px 14px 1px rgba(0, 0, 0, 0.5);
+  transition: right 0.5s ease-in-out;
+}
+
+.open {
+  right: 0;
+}
+
+.closeBtnDiv {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 1.2em;
+  /* color: white; */
+  color: black;
+}
+
+.close {
+  font-size: 1.4rem;
+  margin-top: 9%;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 2%;
+}
+
+.closeBtn:focus {
+  outline: 0;
+}
+.navigation {
+  /* text-align: center; */
+  margin-top: 10%;
+}
+.faIcons {
+  margin-left: 25%;
+  width: 15%;
+  font-size: 1.2rem;
+  color: #6b2c91;
+}
+
+.navLinks {
+  margin-left: 3%;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #6b2c91;
+}
+
+.navLinks a:focus {
+  text-decoration: none;
+}
+
+.ulClass {
+  list-style-type: none;
+}
+
+.liClass {
+  margin-top: 15%;
+  /* border-bottom: 0.5px solid black; */
+  color: white;
+}

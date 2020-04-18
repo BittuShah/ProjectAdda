@@ -5,15 +5,15 @@ import Img3 from "../Images/img3.jpg";
 import vid from "../Videos/vahlam.mp4";
 import slideStyle from "../cssModules/slideShow.module.css";
 
-class slideShow extends Component {
+class SlideShow extends Component {
   state = {
     images: [
       { imgPath: Img1, onScreen: true },
       { imgPath: Img2, onScreen: false },
-      { imgPath: Img3, onScreen: false }
+      { imgPath: Img3, onScreen: false },
     ],
-    intervalTime: 2000,
-    hover: false
+    intervalTime: 5000,
+    hover: false,
   };
 
   slideHoverHandle = () => {
@@ -30,7 +30,7 @@ class slideShow extends Component {
         data-ride="carousel"
       >
         <div className="carousel-inner">
-          {images.map(image => (
+          {images.map((image) => (
             <div
               className={
                 image.onScreen === true
@@ -95,4 +95,4 @@ class slideShow extends Component {
   }
 }
 
-export default slideShow;
+export default SlideShow;

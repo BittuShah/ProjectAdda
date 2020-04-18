@@ -1,0 +1,11 @@
+.resMenu {
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.ulClass {
+  list-style-type: none;
+}
