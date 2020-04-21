@@ -32,11 +32,13 @@ class SlideShow extends Component {
         <div className="carousel-inner">
           {images.map((image) => (
             <div
-              className={
-                image.onScreen === true
-                  ? "carousel-item active"
-                  : "carousel-item"
-              }
+              className={`
+                ${
+                  image.onScreen === true
+                    ? "carousel-item active"
+                    : "carousel-item"
+                } 
+              `}
               data-interval={intervalTime}
               key={image.imgPath}
               // onMouseMove={() => console.log(window.scrollX, window.scrollY)}

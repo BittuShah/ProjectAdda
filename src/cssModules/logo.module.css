@@ -35,3 +35,31 @@
   height: 100%;
   width: 100%;
 }
+
+@media screen and (min-width: 480px) {
+  .logoDiv {
+    width: 12%;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logoDiv {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .logoDiv {
+    width: 8%;
+    height: 75%;
+    margin: 2% 8% 0 6%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logoDiv {
+    width: 8%;
+    margin: 1% 0% 0 8%;
+  }
+}

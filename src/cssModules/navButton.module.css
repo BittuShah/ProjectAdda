@@ -9,3 +9,29 @@
 .ulClass {
   list-style-type: none;
 }
+
+@media screen and (min-width: 480px) {
+  .resMenu {
+    top: 30%;
+    right: 12%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .resMenu {
+    top: 37%;
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .resMenu {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .resMenu {
+    display: none;
+  }
+}

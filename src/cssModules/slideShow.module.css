@@ -42,3 +42,21 @@
   color: #f69487;
   width: 60%;
 }
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 800px) {
+  .imgStyle {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .imgStyle {
+    height: 690px;
+  }
+}

@@ -24,11 +24,9 @@
 
 .headerBackground {
   position: absolute;
-
   background-color: #f69487;
   background-color: rgba(254, 244, 243, 0.2);
   /* background-color: rgba(254, 244, 243, 0.2); */
-
   /* background-color: #f69487; */
   height: inherit;
   width: 100%;
@@ -37,10 +35,20 @@
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 1); */
 }
 
-/* Mobile */
+@media screen and (min-width: 480px) {
+}
 
-/* @media screen and (device-width: 360px) and (device-height: 640px) {
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 800px) {
+}
+
+@media screen and (min-width: 1280px) {
   .header {
-    height: 6.25em;
+    height: 8em;
   }
-} */
+  .headerBackground {
+    background-color: rgba(254, 244, 243, 0.2);
+  }
+}

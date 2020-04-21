@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-// import NavLink from "./navLink";
+import NavLink from "./navLink";
 import NavButton from "./mobileNavigation/navButton";
 import headerStyle from "../cssModules/header.module.css";
 
@@ -11,7 +11,7 @@ const header = (props) => {
       <Logo />
       <NavButton click={props.sliderOpener} />
 
-      {/* <NavLink /> */}
+      <NavLink />
     </header>
   );
 };

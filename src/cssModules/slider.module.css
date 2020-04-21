@@ -49,6 +49,7 @@
 .close {
   font-size: 1.4rem;
   margin-top: 9%;
+  color: black;
 }
 
 .closeBtn {
@@ -70,14 +71,16 @@
   margin-left: 25%;
   width: 15%;
   font-size: 1.2rem;
-  color: #6b2c91;
+  /* color: #6b2c91; */
+  color: black;
 }
 
 .navLinks {
-  margin-left: 3%;
+  margin-left: 2%;
   text-decoration: none;
   font-size: 1.1em;
-  color: #6b2c91;
+  /* color: #6b2c91; */
+  color: black;
 }
 
 .navLinks a:focus {
@@ -91,5 +94,27 @@
 .liClass {
   margin-top: 15%;
   /* border-bottom: 0.5px solid black; */
-  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .sliderMainDiv {
+    width: 50%;
+    right: -700px;
+  }
+  .open {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 800px) {
+  .sliderMainDiv {
+    width: 40%;
+    right: -900px;
+  }
+  .open {
+    right: 0;
+  }
 }

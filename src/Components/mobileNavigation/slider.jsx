@@ -20,52 +20,51 @@ const slider = (props) => {
           </button> */}
           <i
             onClick={() => props.sliderCloser()}
-            className={`${sliderNav.close} fa fa-times-circle-o`}
+            className={`${sliderNav.close} fa fa-times-circle`}
           ></i>
           {/* <i className="faIcons fa fa-window-close" aria-hidden="true"></i> */}
         </div>
         <nav className={sliderNav.navigation}>
           <ul className={sliderNav.ulClass}>
             <li className={sliderNav.liClass}>
-              <i className={`${sliderNav.faIcons} fa fa-home`}></i>
               <a className={sliderNav.navLinks} href="#">
+                <i className={`${sliderNav.faIcons} fa fa-home`}></i>
                 Home
               </a>
             </li>
             <li className={sliderNav.liClass}>
-              <i className={`${sliderNav.faIcons} fa fa-object-group`}></i>
               <a className={sliderNav.navLinks} href="#">
+                <i className={`${sliderNav.faIcons} fa fa-object-group`}></i>
                 Projects
               </a>
             </li>
             <li className={sliderNav.liClass}>
-              <i className={`${sliderNav.faIcons} fa fa-list-alt`}></i>
               <a className={sliderNav.navLinks} href="#">
+                <i className={`${sliderNav.faIcons} fa fa-list-alt`}></i>
                 Category
               </a>
             </li>
             <li className={sliderNav.liClass}>
-              <i className={`${sliderNav.faIcons} fa fa-info-circle`}></i>
-              {/* <i class="far fa-info-circle"></i> */}
               <a className={sliderNav.navLinks} href="#">
+                <i className={`${sliderNav.faIcons} fa fa-info-circle`}></i>
                 About
               </a>
             </li>
             <li className={sliderNav.liClass}>
-              <i className={`${sliderNav.faIcons} fa fa-tasks`}></i>
               <a className={sliderNav.navLinks} href="#">
+                <i className={`${sliderNav.faIcons} fa fa-tasks`}></i>
                 Other
               </a>
             </li>
             <li className={sliderNav.liClass}>
-              <i className={`${sliderNav.faIcons} fa fa-user-plus`}></i>
               <a className={sliderNav.navLinks} href="#">
+                <i className={`${sliderNav.faIcons} fa fa-user-plus`}></i>
                 Sign up
               </a>
             </li>
             <li className={sliderNav.liClass}>
-              <i className={`${sliderNav.faIcons} fa fa-sign-in`}></i>
               <a className={sliderNav.navLinks} href="#">
+                <i className={`${sliderNav.faIcons} fa fa-sign-in`}></i>
                 Login
               </a>
             </li>

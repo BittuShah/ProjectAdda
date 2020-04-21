@@ -5,7 +5,7 @@ const Temp = () => {
 
 const temp = {
   height: "700px",
-  backgroundColor: "#fbffff"
+  backgroundColor: "#fbffff",
   // backgroundColor: "black"
 };
 
