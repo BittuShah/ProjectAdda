@@ -2,14 +2,14 @@
   display: none;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .navigation {
     display: block;
-    width: 78%;
+    width: 86%;
     height: 100%;
     /* border: 1px solid black; */
     z-index: 2;
-    margin-left: 5%;
+    margin-left: 1%;
   }
 
   .ulClass {
@@ -24,7 +24,7 @@
 
   .liClass {
     float: left;
-    padding: 0px 40px 0px 0px;
+    padding: 0px 31px 0px 0px;
     list-style: none;
     font-family: cursive;
     text-transform: capitalize;
@@ -38,7 +38,7 @@
   }
 
   .nav_a {
-    padding: 0.5em 0.8em;
+    padding: 0.5em 0.3em;
     position: relative;
     text-decoration: none;
     font-size: 1.3em;
@@ -82,5 +82,20 @@
   .nav_a:hover:after {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navigation {
+    width: 79%;
+    margin-left: 5%;
+  }
+
+  .liClass {
+    padding: 0px 40px 0px 0px;
+  }
+
+  .nav_a {
+    padding: 0.5em 0.8em;
   }
 }
