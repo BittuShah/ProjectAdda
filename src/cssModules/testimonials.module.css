@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap");
+
 .testimonial {
   background-color: #fbffff;
-  font-family: cursive;
+  /* font-family: cursive; */
+  font-family: "Cedarville Cursive", cursive;
+  /* height: 100%; */
+  /* border: 1px solid black; */
   /* margin: 0px; */
   /* padding: 5px; */
 }
 
 .outer {
-  /* border: "1px solid black", */
+  /* border: 1px solid black; */
   border-radius: 17px;
   background-color: #fbd4cf;
   color: #2b123a;
@@ -45,8 +50,35 @@
   font-size: 20px;
 }
 
+.collapse {
+  background-color: #e9ecef;
+  text-align: center;
+  /* border: 1px solid black; */
+  margin-top: -32px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 97%; */
+  display: none;
+  font-weight: bold;
+  box-shadow: -1px 0px 2px 0px;
+}
+
+.collapse:hover {
+  text-shadow: 1px 0px 14px black;
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  /* .testimonial {
+    height: 370px;
+    overflow: hidden;
+    z-index: -2;
+  } */
+
+  /* .outer {
+    z-index: -1;
+  } */
 
   .name {
     font-size: 15px;
@@ -55,5 +87,10 @@
   .boxes {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+
+  .collapse {
+    display: block;
+    /* z-index: 10; */
   }
 }
